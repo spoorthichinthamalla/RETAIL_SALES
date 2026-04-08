@@ -1,3 +1,4 @@
+PLEASE REFER THE CODE VIEW NOT PREVIEW IN GITHUB
  Online Retail Sales Analysis using SQLite
 
  Project Description
