@@ -40,7 +40,8 @@ Watch      3
 Shoes      2
 Laptop     2
 Phone      1
-refer query1.png
+refer [![Query 1](query1.png)](https://raw.githubusercontent.com/spoorthichinthamalla/RETAIL_SALES/master/query1.png)
+
 2. Most Valuable Customers:
 SELECT c.name, SUM(p.price * oi.quantity) AS total_spent
 FROM customers c
