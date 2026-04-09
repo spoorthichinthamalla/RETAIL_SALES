@@ -1,4 +1,3 @@
-PLEASE REFER THE CODE VIEW NOT PREVIEW IN GITHUB
  Online Retail Sales Analysis using SQLite
 
  Project Description
@@ -28,68 +27,15 @@ This project successfully demonstrates how SQL can be used as a powerful tool fo
 
 QUERIES
 1.Top-Selling Products
-SELECT p.name, SUM(oi.quantity) AS total_sold
-FROM order_items oi
-JOIN products p ON oi.product_id = p.product_id
-GROUP BY p.name
-ORDER BY total_sold DESC;
-output:
-name       total_sold
----------  ----------
-Watch      3
-Shoes      2
-Laptop     2
-Phone      1
 ![image alt](query1.png)
 
 2. Most Valuable Customers:
-SELECT c.name, SUM(p.price * oi.quantity) AS total_spent
-FROM customers c
-JOIN orders o ON c.customer_id = o.customer_id
-JOIN order_items oi ON o.order_id = oi.order_id
-JOIN products p ON oi.product_id = p.product_id
-GROUP BY c.name
-ORDER BY total_spent DESC;
-output:
-name     total_spent
--------  -----------
-Asha     68500
-Sneha    55000
-Rahul    20000
-refer query2.png
+![image alt](query2.png)
 3.Monthly Revenue
-SELECT strftime('%Y-%m', o.order_date) AS month,
-       SUM(p.price * oi.quantity) AS revenue
-FROM orders o
-JOIN order_items oi ON o.order_id = oi.order_id
-JOIN products p ON oi.product_id = p.product_id
-GROUP BY month;
-output:
-month    revenue
--------  -------
-2026-01  61000
-2026-02  27500
-2026-03  55000
-refer query3.png
+![image alt](query3.png)
 4. Category-wise Sales
-SELECT p.category,
-       SUM(p.price * oi.quantity) AS total_sales
-FROM order_items oi
-JOIN products p ON oi.product_id = p.product_id
-GROUP BY p.category;
-output:
-category      total_sales
------------- ------------
-Electronics   130000
-Fashion       6000
-Accessories   7500
-refer query4.png
+![image alt](query4.png)
 5. Inactive Customers
-SELECT c.name
-FROM customers c
-LEFT JOIN orders o ON c.customer_id = o.customer_id
-WHERE o.order_id IS NULL;
-output:
-refer query5.png
+![image alt](query5.png)
 
 
