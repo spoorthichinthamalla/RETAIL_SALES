@@ -28,18 +28,23 @@ This project successfully demonstrates how SQL can be used as a powerful tool fo
 QUERIES
 
 1.Top-Selling Products
+
 ![image alt](query1.png)
 
-2. Most Valuable Customers:
+2. Most Valuable Customers
+
 ![image alt](query2.png)
 
 3.Monthly Revenue
+
 ![image alt](query3.png)
 
 4. Category-wise Sales
+
 ![image alt](query4.png)
 
 6. Inactive Customers
+
 ![image alt](query5.png)
 
 
