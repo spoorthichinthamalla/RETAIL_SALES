@@ -26,16 +26,20 @@ conclusion
 This project successfully demonstrates how SQL can be used as a powerful tool for data analysis in retail systems. It provides a strong foundation for building data-driven applications and understanding business intelligence concepts.
 
 QUERIES
+
 1.Top-Selling Products
 ![image alt](query1.png)
 
 2. Most Valuable Customers:
 ![image alt](query2.png)
+
 3.Monthly Revenue
 ![image alt](query3.png)
+
 4. Category-wise Sales
 ![image alt](query4.png)
-5. Inactive Customers
+
+6. Inactive Customers
 ![image alt](query5.png)
 
 
