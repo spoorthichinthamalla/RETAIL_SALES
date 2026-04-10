@@ -44,6 +44,6 @@ QUERIES
 
 ![image alt](query4.png)
 
-6. Inactive Customers
+5. Inactive Customers
 
 ![image alt](query5.png)
